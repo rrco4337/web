@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Redirection</title>
+    <style>
+        body {
+            background-color: #f3e5f5; /* Violet pastel */
+            color: #6a1b9a; /* Couleur de texte violet foncé */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #d81b60; /* Rose pastel */
+        }
+        a {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #ab47bc; /* Violet pastel */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #8e24aa; /* Violet plus foncé au survol */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue sur la Page de Redirection</h1>
+    <p>Choisissez une option ci-dessous :</p>
+    <a href="index.php">Liste des Chauffeurs</a>
+    <a href="listevehicule.php">Liste des Véhicules</a>
+    <a href="listevehiculepluschauffeur.php">Véhicules et Chauffeurs</a>
+    <a href="BenefParVehicule.php">Bénéfices par Véhicule</a>
+    <a href="BenParJour.php">Bénéfices par Jour</a>
+    <a href="TrajetRentable.php">Trajets Rentables</a>
+    <a href="Dispo.php">Véhicules Disponibles</a>
+    <a href="Panne.php">Taux de Pannes</a>
+    <a href="SalaireChauffeur.php">Salaires des Chauffeurs</a>
+
+    <h1>Vérifier la Disponibilité des Véhicules</h1>
+    <form action="/Dispo" method="post">
+        <label for="date">Sélectionnez une date :</label>
+        <input type="date" id="date" name="date" required>
+        <input type="submit" value="Vérifier">
+    </form>
+</body>
+</html>
